@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión | RiesgoNet</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+<body class="text-rn-base font-body bg-[#f0f0f0]
+bg-[url('./img/rn-bg-blur.svg')] bg-no-repeat bg-contain bg-right-top">
+
+    <div class="w-full bg-none bg-no-repeat bg-auto bg-right-top md:bg-[url('./img/rn-bg-layout.png')]">
+
+        <header id="headerContent" class="px-4 py-4">
+            <div class="container mx-auto w-full max-w-[1220px]">
+                <nav class="relative flex justify-between">
+                    <div id="logo" class="flex items-center">
+                        <a aria-label="Home" href="/"><img src="./src/img/rn-logo-header.png" alt="RiesgoNet" class="w-[244px] h-auto"></a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main id="iniciarSesion" class="px-4 pt-0 md:pt-20">
+
+            <div class="container mx-auto w-full max-w-[950px] min-h-[454px] bg-white rounded-2xl shadow-[6px_6px_23px_0px_rgba(0,0,0,0.10)] overflow-hidden md:flex">
+                <div class="p-8 gap-4 bg-gradient-to-l from-[rgba(93,146,252,0.3)] to-[rgba(93,146,252,0.01)] flex-1 flex flex-col justify-between md:p-16 md:justify-end md:gap-14">
+                    <div class="gap-4 justify-left items-center md:flex">
+                        <div class="w-16 h-auto mb-4 md:w-24 md:mb-0">
+                            <svg class="md:w-24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 97 86" fill="none">
+                                <circle cx="42.2062" cy="43.9518" r="40.4629" stroke="#5D92FC" stroke-width="2.35135"/>
+                                <path d="M42.2062 40.482C47.9552 40.482 52.6158 35.8214 52.6158 30.0724C52.6158 24.3233 47.9552 19.6627 42.2062 19.6627C36.4571 19.6627 31.7965 24.3233 31.7965 30.0724C31.7965 35.8214 36.4571 40.482 42.2062 40.482Z" fill="#5D92FC"/>
+                                <path d="M41.6278 43.9518C52.7991 43.9518 61.8688 52.5502 61.8688 63.1412C61.8688 65.3199 60.0028 67.0843 57.7096 67.0843H25.546C23.2528 67.089 21.3868 65.3199 21.3868 63.1412C21.3868 52.5502 30.4565 43.9518 41.6278 43.9518Z" fill="#5D92FC"/>
+                                <circle cx="79.2182" cy="17.3494" r="17.3494" fill="#31C08D"/>
+                                <rect x="78.2928" y="9.25305" width="3.00723" height="15.0361" fill="white"/>
+                                <rect x="87.3146" y="15.2675" width="3.00723" height="15.0361" transform="rotate(90 87.3146 15.2675)" fill="white"/>
+                            </svg>
+                        </div>
+                        <p class="font-body text-lg font-bold leading-none">Si aun no tiene cuenta en Riesgonet cree una aquí de forma rápida y simple.</p>
+                    </div>
+                    <p class="text-rn-primary font-body font-normal leading-none text-base">Usa nuestra plataforma digital para transformar el manejo de datos en oportunidades de negocio.</p>
+                    <button id="btnToCrearCuentaPage" class="rn-btn rn-btn-primary w-full">Crear Cuenta</button>
+                </div>
+                <div class="p-8 flex-1 flex flex-col justify-between md:p-16">
+                    <p class="font-bold text-2xl mb-4 md:mb-0">Iniciar Sesión</p>
+                    <div>
+                        <form id="formSignIn" action="">
+                            <label for="user" class="block mb-4">
+                                <span class="block px-2">Usuario</span>
+                                <input type="text" id="user" name="user" placeholder="Ingresar usuario" class="px-4 py-3 border placeholder-black/25 focus:outline-none focus:border-rn-primary-dark focus:ring-rn-primary-dark w-full rounded-lg" required="" value="">
+                            </label>
+
+                            <label for="pass" class="block mb-4">
+                                <span class="block px-2">Contraseña</span>
+                                <input type="password" id="pass" name="pass" placeholder="Ingresar contraseña" class="px-4 py-3 border placeholder-black/25 focus:outline-none focus:border-rn-primary-dark focus:ring-rn-primary-dark w-full rounded-lg" required="" value="">
+                            </label>
+                            <p class="text-sm text-right mb-4"><a href="./src/pages/password.html" target="_self">Olvidé mi usuario o contraseña</a></p>
+                            <button id="btnIngresar" class="rn-btn rn-btn-secondary w-full">Ingresar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+    </div>
+
+
+
+<script src="./src/js/main.js"></script>
+</body>
+</html>

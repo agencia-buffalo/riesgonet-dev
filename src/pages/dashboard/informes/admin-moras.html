@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador de Moras | RiesgoNet</title>
+    <link rel="stylesheet" href="../../../output.css">
+</head>
+<body class="text-rn-base font-body bg-[#f0f0f0]
+bg-[url('./img/rn-bg-blur.svg')] bg-no-repeat bg-auto bg-[right_-100px_top_-200px]">
+
+    <div class="container p-4 mx-auto w-full max-w-[1220px] flex gap-4 justify-start items-start">
+
+        <main id="sectionInfo" class="flex-1 p-4 flex flex-col justify-start gap-4">
+
+            <div id="infoContent" class="py-2">
+
+                <div class="bg-white shadow-md rounded overflow-hidden mb-8">
+                    
+                    <div class="p-8">
+
+                        <div class="flex justify-center md:justify-end items-center mb-8">
+                            <img src="../../../img/rn-logo-header.png" alt="logo RiesgoNet" class="w-[200px] h-auto">
+                        </div>
+
+                        <div class="flex justify-center items-center mb-8 text-center">
+                            <p class="font-bold text-white bg-rn-primary uppercase rounded-full px-12 py-2">Administrador de moras</p>
+                        </div>
+
+                        <div class="flex flex-col gap-4 md:flex-row mb-12">
+                            <div class="bg-neutral-100 rounded-xl flex-1 p-4">
+                                
+                                <!-- status -->
+                                <div class="mb-4 flex gap-2 justify-start items-center bg-rn-primary-light/60 rounded-full md:inline-flex md:pe-8">
+                                    <span class="bg-rn-primary p-1 rounded-full w-12 h-12 flex justify-center items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="size-6">
+                                            <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
+                                        </svg>
+                                    </span>
+                                    <p class="font-bold text-base uppercase text-rn-primary">Status</p>
+                                </div>
+                                <div class="grid grid-cols-1 md:grid-cols-[1fr_4fr] gap-1.5 mb-4 *:text-[12px] *:uppercase *:rounded-full *:px-4 *:py-1.5 *:leading-tight">
+
+                                    <p class="bg-rn-primary/10"><span class="text-rn-primary font-bold">Procesar</span></p>
+                                    <p class="bg-white text-left"><span>
+                                        <input type="checkbox" name="" id="" class="w-auto">
+                                    </span></p>
+                                    
+                                    
+                                    <p class="bg-rn-primary/10"><span class="text-rn-primary font-bold">Mensaje</span></p>
+                                    <p class="bg-white"><span class="text-rn-base font-normal">-</span></p>
+
+                                </div>
+
+                                <!-- datos cargados -->
+                                <div class="mb-4 flex gap-2 justify-start items-center bg-rn-primary-light/60 rounded-full md:inline-flex md:pe-8">
+                                    <span class="bg-rn-primary p-1 rounded-full w-12 h-12 flex justify-center items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="size-6">
+                                            <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
+                                        </svg>
+                                    </span>
+                                    <p class="font-bold text-base uppercase text-rn-primary">DATOS CARGADOS</p>
+                                </div>
+                                <div class="grid grid-cols-1 md:grid-cols-[1fr_4fr] gap-1.5 mb-4 *:text-[12px] *:uppercase *:rounded-full *:px-4 *:py-1.5 *:leading-tight">
+
+                                    <p class="bg-rn-primary/10"><span class="text-rn-primary font-bold">DNI</span></p>
+                                    <p class="bg-white"><span class="text-rn-base font-normal">-</span></p>
+                                    
+                                    <p class="bg-rn-primary/10"><span class="text-rn-primary font-bold">GÉNERO</span></p>
+                                    <p class="bg-white"><span class="text-rn-base font-normal">-</span></p>
+
+                                    <p class="bg-rn-primary/10"><span class="text-rn-primary font-bold">CUIT</span></p>
+                                    <p class="bg-white"><span class="text-rn-base font-normal">-</span></p>
+
+                                    <p class="bg-rn-primary/10"><span class="text-rn-primary font-bold">Apellido</span></p>
+                                    <p class="bg-white"><span class="text-rn-base font-normal">-</span></p>
+
+                                    <p class="bg-rn-primary/10"><span class="text-rn-primary font-bold">Nombre</span></p>
+                                    <p class="bg-white"><span class="text-rn-base font-normal">-</span></p>
+
+                                    <p class="bg-rn-primary/10"><span class="text-rn-primary font-bold">Referencia</span></p>
+                                    <p class="bg-white"><span class="text-rn-base font-normal">-</span></p>
+
+                                    <p class="bg-rn-primary/10"><span class="text-rn-primary font-bold">Monto</span></p>
+                                    <p class="bg-white"><span class="text-rn-base font-normal">-</span></p>
+
+                                    <p class="bg-rn-primary/10"><span class="text-rn-primary font-bold">Causa</span></p>
+                                    <p class="bg-white"><span class="text-rn-base font-normal">-</span></p>
+
+                                </div>
+
+                                <!-- datos riesgonet -->
+                                <div class="mb-4 flex gap-2 justify-start items-center bg-rn-primary-light/60 rounded-full md:inline-flex md:pe-8">
+                                    <span class="bg-rn-primary p-1 rounded-full w-12 h-12 flex justify-center items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="size-6">
+                                            <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
+                                        </svg>
+                                    </span>
+                                    <p class="font-bold text-base uppercase text-rn-primary">DATOS en Riesgonet</p>
+                                </div>
+                                <div class="grid grid-cols-1 md:grid-cols-[1fr_4fr] gap-1.5 mb-4 *:text-[12px] *:uppercase *:rounded-full *:px-4 *:py-1.5 *:leading-tight">
+
+                                    <p class="bg-rn-primary/10"><span class="text-rn-primary font-bold">DNI</span></p>
+                                    <p class="bg-white"><span class="text-rn-base font-normal">-</span></p>
+                                    
+                                    <p class="bg-rn-primary/10"><span class="text-rn-primary font-bold">GÉNERO</span></p>
+                                    <p class="bg-white"><span class="text-rn-base font-normal">-</span></p>
+
+                                    <p class="bg-rn-primary/10"><span class="text-rn-primary font-bold">CUIT</span></p>
+                                    <p class="bg-white"><span class="text-rn-base font-normal">-</span></p>
+
+                                    <p class="bg-rn-primary/10"><span class="text-rn-primary font-bold">Apellido</span></p>
+                                    <p class="bg-white"><span class="text-rn-base font-normal">-</span></p>
+
+                                    <p class="bg-rn-primary/10"><span class="text-rn-primary font-bold">Nombre</span></p>
+                                    <p class="bg-white"><span class="text-rn-base font-normal">-</span></p>
+
+                                </div>
+
+                                <!-- datos afectaciones -->
+                                <div class="mb-4 flex gap-2 justify-start items-center bg-rn-primary-light/60 rounded-full md:inline-flex md:pe-8">
+                                    <span class="bg-rn-primary p-1 rounded-full w-12 h-12 flex justify-center items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="size-6">
+                                            <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
+                                        </svg>
+                                    </span>
+                                    <p class="font-bold text-base uppercase text-rn-primary">DATOS AFECTACIONES PREVIAS</p>
+                                </div>
+                                <div class="grid grid-cols-1 md:grid-cols-[1fr_4fr] gap-1.5 mb-4 *:text-[12px] *:uppercase *:rounded-full *:px-4 *:py-1.5 *:leading-tight">
+
+                                    <p class="bg-rn-primary/10"><span class="text-rn-primary font-bold">REFERENCIA</span></p>
+                                    <p class="bg-white"><span class="text-rn-base font-normal">-</span></p>
+                                    
+                                    <p class="bg-rn-primary/10"><span class="text-rn-primary font-bold">MONTO</span></p>
+                                    <p class="bg-white"><span class="text-rn-base font-normal">-</span></p>
+
+                                    <p class="bg-rn-primary/10"><span class="text-rn-primary font-bold">CAUSA</span></p>
+                                    <p class="bg-white"><span class="text-rn-base font-normal">-</span></p>
+
+                                    <p class="bg-rn-primary/10"><span class="text-rn-primary font-bold">FECHA MORA</span></p>
+                                    <p class="bg-white"><span class="text-rn-base font-normal">-</span></p>
+
+                                    <p class="bg-rn-primary/10"><span class="text-rn-primary font-bold">FECHA BAJA</span></p>
+                                    <p class="bg-white"><span class="text-rn-base font-normal">-</span></p>
+
+                                </div>
+
+                                <div class="flex flex-col gap-4 my-8 md:flex-row md:justify-center md:items-center md:pt-4">
+                                    <button type="button" class="rn-btn rn-btn-primary">Corregir datos ingresados</button>
+                                    <button type="button" class="rn-btn rn-btn-primary">Confirmar afectaciones</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+
+<script src="../../../js/main.js"></script>
+</body>
+</html>

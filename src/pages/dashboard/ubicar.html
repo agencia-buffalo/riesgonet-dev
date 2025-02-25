@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubicar | RiesgoNet</title>
+    <link rel="stylesheet" href="../../output.css">
+</head>
+<body class="text-rn-base font-body bg-[#f0f0f0]
+bg-[url('./img/rn-bg-blur.svg')] bg-no-repeat bg-auto bg-[right_-100px_top_-200px]">
+
+    <div class="container p-4 mx-auto w-full max-w-[1220px] flex gap-4 justify-start items-start">
+
+        <main id="sectionInfo" class="flex-1 p-4 flex flex-col justify-start gap-4">
+
+            <div id="infoContent" class="py-2">
+
+                <div class="mb-4">
+                    <p>Ubicar Personas Físicas y Jurídicas</p>
+                </div>
+                
+                <!-- Ubicar Personas Físicas y Jurídicas -->
+                <div class="bg-white shadow-md rounded-2xl overflow-hidden">
+                    <div class="bg-rn-secondary-light py-4 px-8">
+                        <p class="font-bold text-white text-xl">Datos principales</p>
+                    </div>
+                    <div class="p-8">
+                        <form id="formUbicarPersonas" action="">
+                            <div class="grid grid-cols-1 gap-4 md:grid-cols-1">
+
+                                <fieldset class="grid grid-cols-1 gap-4 md:grid-cols-2">
+                                    <label for="dni" class="text-left">
+                                        <span>DNI / CUIT</span>
+                                        <input type="number" id="dni" name="dni" placeholder="Ingresar número" required>
+                                    </label>
+                                    <label for="sexo">
+                                        <span>Sexo</span>
+                                        <select name="sexo" id="sexo">
+                                            <option value="01">Masculino</option>
+                                            <option value="02">Femenino</option>
+                                        </select>
+                                    </label>
+                                    <label for="buscarPadron" class="flex">
+                                        <input type="checkbox" name="buscarPadron" id="buscarPadron" class="w-auto">
+                                        <span class="font-normal text-sm">Buscar sólo en el padrón</span>
+                                    </label>
+                                </fieldset>
+
+                                <div class="bg-rn-primary-light text-white font-bold p-4 rounded-xl my-4">
+                                    <p>Datos complementarios</p>
+                                </div>
+
+                                <fieldset class="grid grid-cols-1 gap-4 md:grid-cols-2">
+                                    <label for="razonSocial">
+                                        <span>Apellido / Razón social</span>
+                                        <input type="text" id="razonSocial" name="razonSocial" placeholder="Ingresar Razon Social" required>
+                                    </label>
+
+                                    <label for="nombre">
+                                        <span>Nombre</span>
+                                        <input type="text" id="nombre" name="nombre" placeholder="Ingresar nombre" required>
+                                    </label>
+
+                                    <label for="provincia">
+                                        <span>Provincia</span>
+                                        <select name="provincia" id="provincia">
+                                            <option value="01">Buenos Aires</option>
+                                            <option value="02">Córdoba</option>
+                                        </select>
+                                    </label>
+
+                                    <label for="localidad">
+                                        <span>Localidad</span>
+                                        <input type="text" id="localidad" name="localidad" placeholder="Ingresar localidad" required>
+                                    </label>
+
+                                    <label for="calle">
+                                        <span class="">Calle</span>
+                                        <input type="text" id="calle" name="calle" placeholder="Ingresar calle" required>
+                                    </label>
+                                </fieldset>
+                            
+                            </div>
+                            <div class="flex flex-col gap-4 mt-10 justify-start md:flex-row md:pr-4">
+                                <button id="ubicarPersonasAceptar" type="button" class="rn-btn rn-btn-form w-full md:w-1/2">Aceptar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+
+<script src="../../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtrar 24 | RiesgoNet</title>
+    <link rel="stylesheet" href="../../output.css">
+</head>
+<body class="text-rn-base font-body bg-[#f0f0f0]
+bg-[url('./img/rn-bg-blur.svg')] bg-no-repeat bg-auto bg-[right_-100px_top_-200px]">
+
+    <div class="container p-4 mx-auto w-full max-w-[1220px] flex gap-4 justify-start items-start">
+
+        <main id="sectionInfo" class="flex-1 p-4 flex flex-col justify-start gap-4">
+
+            <div id="infoContent" class="py-2">
+
+                <div class="mb-4">
+                    <p>Filtrar 24</p>
+                </div>
+
+                <!-- Ingrese los datos a consultar -->
+                <div class="bg-white shadow-md rounded-2xl overflow-hidden mb-8">
+                    <div class="bg-rn-secondary-light py-4 px-8 flex flex-col gap-4 md:flex-row md:justify-between md:items-center">
+                        <p class="font-bold text-white text-xl leading-none">Ingrese los datos a consultar</p>
+                    </div>
+                    <div class="p-8">
+                        <form id="formFiltrar24" action="">
+                            <div class="grid grid-cols-1 gap-4 md:grid-cols-1">
+
+                                <fieldset class="grid grid-cols-1 gap-4 md:grid-cols-2">
+                                    <label for="aplicarPoliticas">
+                                        <span>Aplicar políticas</span>
+                                        <select name="aplicarPoliticas" id="aplicarPoliticas">
+                                            <option value="01">X Defecto</option>
+                                            <option value="02">X Defecto 2</option>
+                                        </select>
+                                    </label>
+                                    <label for="versionDocumento">
+                                        <span>Versión Documento:*</span>
+                                        <select name="versionDocumento" id="versionDocumento">
+                                            <option value="01">Elija una opción</option>
+                                            <option value="02">DNI</option>
+                                            <option value="03">Libreta</option>
+                                        </select>
+                                        <span class="font-normal text-[12px] mt-1">*Solo DNI / LIBRETA (CÍVICA / ENROLAMIENTO)</span>
+                                    </label>
+                                    <label for="importeEndeudamiento">
+                                        <span>Importe Endeudamiento</span>
+                                        <input type="number" id="importeEndeudamiento" name="importeEndeudamiento" placeholder="Ingresar valor" required>
+                                    </label>
+                                    <label for="percentEndeudamiento">
+                                        <span>% Endeudamiento</span>
+                                        <input type="number" id="percentEndeudamiento" name="percentEndeudamiento" placeholder="Ingresar valor" required>
+                                    </label>
+                                    <label for="sueldo">
+                                        <span>Sueldo</span>
+                                        <input type="number" id="sueldo" name="sueldo" placeholder="Ingresar valor" required>
+                                    </label>
+                                    <label for="versionDocumento">
+                                        <span>Versión Documento:*</span>
+                                        <select name="versionDocumento" id="versionDocumento">
+                                            <option value="01">Elija una opción</option>
+                                            <option value="02">DNI</option>
+                                            <option value="03">Libreta</option>
+                                        </select>
+                                        <span class="font-normal text-[12px] mt-1">*Solo DNI / LIBRETA (CÍVICA / ENROLAMIENTO)</span>
+                                    </label>
+
+                                    <label for="nombre">
+                                        <span>Apellido y Nombre</span>
+                                        <input type="text" id="nombre" name="nombre" placeholder="Ingresar Apellido y Nombre" required>
+                                    </label>
+                                    <label for="dni">
+                                        <span>DNI / CUIT / CUIL</span>
+                                        <input type="number" id="dni" name="dni" placeholder="Ingresar número" required>
+                                    </label>
+                                </fieldset>
+
+                                <fieldset class="grid grid-cols-1 gap-4 md:grid-cols-4">
+                                    <label for="sexo">
+                                        <span>Sexo</span>
+                                        <select name="sexo" id="sexo">
+                                            <option value="01">Masculino</option>
+                                            <option value="02">Femenino</option>
+                                        </select>
+                                    </label>
+                                    <label for="ingresos">
+                                        <span>Ingresos</span>
+                                        <select name="ingresos" id="ingresos">
+                                            <option value="01">Sin datos</option>
+                                            <option value="02">Con datos</option>
+                                        </select>
+                                    </label>
+                                    <label for="cuitEmpleador">
+                                        <span>CUIT Empleador</span>
+                                        <input type="number" id="cuitEmpleador" name="cuitEmpleador" placeholder="Ingresar número" required>
+                                    </label>
+                                    <label for="ciudad">
+                                        <span>Ciudad</span>
+                                        <select name="ciudad" id="ciudad">
+                                            <option value="01">Capital Federal</option>
+                                            <option value="02">Buenos Aires</option>
+                                        </select>
+                                    </label>
+                                </fieldset>
+
+                                <fieldset class="grid grid-cols-1 gap-4 md:grid-cols-[4fr_1fr_1fr_1fr]">
+                                    <label for="calle" class="">
+                                        <span>Calle</span>
+                                        <input type="text" id="calle" name="calle" placeholder="Ingresar Calle" required>
+                                    </label>
+                                    <label for="calleNro">
+                                        <span>Nro</span>
+                                        <input type="number" id="calleNro" name="calleNro" placeholder="Ingresar Nro" required>
+                                    </label>
+                                    <label for="piso">
+                                        <span>Piso</span>
+                                        <input type="number" id="piso" name="piso" placeholder="Ingresar Piso" required>
+                                    </label>
+                                    <label for="depto">
+                                        <span>Depto.</span>
+                                        <input type="text" id="depto" name="depto" placeholder="Ingresar Depto." required>
+                                    </label>
+                                </fieldset>
+
+                                <fieldset class="grid grid-cols-1 gap-4 md:grid-cols-3">
+                                    <label for="telPersonal" class="">
+                                        <span>Teléfono</span>
+                                        <input type="tel" id="telPersonal" name="telPersonal" placeholder="Ingresar Teléfono" required>
+                                    </label>
+                                    <label for="telLaboral" class="">
+                                        <span>Teléfono Laboral</span>
+                                        <input type="tel" id="telLaboral" name="telLaboral" placeholder="Ingresar Teléfono Laboral" required>
+                                    </label>
+                                    <label for="telReferido" class="">
+                                        <span>Teléfono Referido</span>
+                                        <input type="tel" id="telReferido" name="telReferido" placeholder="Ingresar Teléfono Referido" required>
+                                    </label>
+                                </fieldset>
+
+                            </div>
+                            <div class="flex flex-col gap-4 mt-10 md:flex-row">
+                                <button id="filtrar24Aceptar" type="button" class="rn-btn rn-btn-form w-full">Aceptar</button>
+                                <button id="filtrar24Cancelar" type="button" class="rn-btn rn-btn-form-outline w-full">Cancelar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- PRIMER PASO: Consistencia -->
+                <div class="bg-white shadow-md rounded-2xl overflow-hidden mb-8">
+                    <div class="bg-rn-secondary-light py-4 px-8 flex flex-col gap-4 md:flex-row md:justify-between md:items-center">
+                        <p class="font-bold text-white text-xl leading-none">PRIMER PASO: Consistencia</p>
+                    </div>
+                    <div class="p-8">
+                        <form id="formConsistencia" action="">
+                            <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+
+                                <label for="nombre">
+                                    <span>Apellido y Nombre</span>
+                                    <input class="uppercase text-black/60 bg-[url('./img/rn-icon-check.svg')] bg-no-repeat bg-[center_right_5px] pr-10" type="text" id="nombre" name="nombre" value="Rodriguez Marcos" disabled>
+                                </label>
+
+                                <label for="telefono">
+                                    <span>Teléfono</span>
+                                    <input class="uppercase text-black/60 bg-[url('./img/rn-icon-none.svg')] bg-no-repeat bg-[center_right_5px] pr-10" type="tel" id="telefono" name="telefono" value="No encontrado" disabled>
+                                </label>
+
+                            </div>
+                            <div class="flex flex-col gap-4 mt-10 md:flex-row justify-center">
+                                <button id="btnConsistencia" type="button" class="rn-btn rn-btn-form md:w-1/3">Continuar sin mapa</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Informe FiltrAR - APROBAR -->
+                <div class="bg-white shadow-md rounded-2xl overflow-hidden mb-8">
+                    <div class="bg-rn-secondary-light py-4 px-8 flex flex-col gap-4 md:flex-row md:justify-between md:items-center">
+                        <p class="font-bold text-white text-xl leading-none">Informe FiltrAR - APROBAR</p>
+                        <p class="font-normal text-white text-sm leading-none">Nro de Operación: 746799696</p>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex flex-col-reverse gap-4 md:flex-row">
+
+                            <div class="flex-1">
+                                <div class="bg-neutral-100 rounded-xl flex-1 p-2">
+                                    <div class="mb-4">
+                                        <span class="bg-rn-secondary-light p-1 rounded-full w-12 h-12 flex justify-center items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                                <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z" clip-rule="evenodd" />
+                                            </svg>                                      
+                                        </span>
+                                    </div>
+                                    <div class="grid grid-cols-1 gap-1 md:grid-cols-2">
+                                        <div class="grid gap-1 *:text-[11px] *:uppercase *:rounded-full *:px-2 *:py-1 *:bg-rn-primary/10">
+                                            <div><p><span>Validada Existencia Civica</span></p></div>
+                                            <div><p><span class="text-rn-primary font-bold">Sexo</span> <span>Masculino</span></p></div>
+                                            <div><p><span class="text-rn-primary font-bold">Ejemplar</span> <span>D</span></p></div>
+                                            <div><p><span class="text-rn-primary font-bold">DNI</span> <span>32391121</span></p></div>
+                                            <div><p><span class="text-rn-primary font-bold">Clase</span> <span>1986</span></p></div>
+                                            <div><p><span class="text-rn-primary font-bold">Registro Fiscal</span> <span>20-32391121-6</span></p></div>
+                                            <div><p><span class="text-rn-primary font-bold">Fecha de nacimiento</span> <span>25/06/1986</span></p></div>
+                                            <div><p><span class="text-rn-primary font-bold">Email</span> <span>markitosrodriguez@hotmail.com</span></p></div>
+                                        </div>
+                                        <div class="grid gap-1 *:text-[11px] *:uppercase *:rounded-full *:px-2 *:py-1 *:bg-rn-primary/10">
+                                            <div><p><span class="text-rn-primary font-bold">Padrón</span> <span>71442</span></p></div>
+                                            <div><p><span class="text-rn-primary font-bold">Localidad</span> <span>General Pico</span></p></div>
+                                            <div><p><span class="text-rn-primary font-bold">Código postal</span> <span>L6360AKF</span></p></div>
+                                            <div><p><span class="text-rn-primary font-bold">Provincia</span> <span>La Pampa</span></p></div>
+                                            <div><p><span class="text-rn-primary font-bold">Nacionalidad</span> <span>Argentina</span></p></div>
+                                            <div class="!bg-rn-secondary/10"><p><span class="text-rn-secondary font-bold">Fuente</span> <span>Relevamiento propio</span></p></div>
+                                            <div class="!bg-rn-secondary/10"><p><span class="text-rn-secondary font-bold">Registros públicos</span> <span>On line</span></p></div>
+                                            <div class="!bg-rn-secondary/10"><p><span class="text-rn-secondary font-bold">AFIP</span> <span>On line</span></p></div>
+                                            <div class="!bg-rn-secondary/10"><p><span class="text-rn-secondary font-bold">VS</span> <span>Internet</span></p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rounded-xl p-0 mt-4">
+                                    <div class="grid grid-cols-1 gap-1 mb-2 *:text-[11px] *:uppercase *:rounded-full *:px-2 *:py-1 *:bg-rn-primary/10">
+                                        <div><p><span>INFORMACION ACTUALIZADA AL 2024-10</span></p></div>
+                                        <!-- <div><p><span>INFORMACION ACTUALIZADA AL 2024-10</span></p></div> -->
+                                    </div>
+                                    
+                                    <!-- ajustar responsive -->
+                                    <div class="grid grid-cols-1 md:grid-cols-[1fr_2fr_2fr] gap-1 *:text-[11px] *:uppercase *:rounded-full *:px-2 *:py-1 *:bg-neutral-100 *:text-center">
+                                        <!-- año --><div class="order-0 md:order-0"><p class="font-bold text-rn-primary">Año</p></div>
+                                        <!-- 2024 --><div class="order-1 md:order-1"><p>2024</p></div>
+                                        <!-- 2023 --><div class="order-4 md:order-2"><p>2023</p></div>
+                                        <!-- mes --><div class="hidden md:block md:order-3"><p class="font-bold text-rn-primary">Mes</p></div>
+                                        <!-- meses24 --><div class="order-2 md:order-4 !bg-transparent !p-0 flex justify-between items-center *:bg-neutral-100 *:text-[11px] *:uppercase *:rounded-full *:px-2 *:py-1">
+                                            <span>E</span>
+                                            <span>F</span>
+                                            <span>M</span>
+                                            <span>A</span>
+                                            <span>M</span>
+                                            <span>J</span>
+                                            <span>J</span>
+                                            <span>A</span>
+                                            <span>S</span>
+                                            <span>O</span>
+                                            <span>N</span>
+                                            <span>D</span>
+                                        </div>
+                                        <!-- meses23 --><div class="order-5 md:order-5 !bg-transparent !p-0 flex justify-between items-center *:bg-neutral-100 *:text-[11px] *:uppercase *:rounded-full *:px-2 *:py-1">
+                                            <span>E</span>
+                                            <span>F</span>
+                                            <span>M</span>
+                                            <span>A</span>
+                                            <span>M</span>
+                                            <span>J</span>
+                                            <span>J</span>
+                                            <span>A</span>
+                                            <span>S</span>
+                                            <span>O</span>
+                                            <span>N</span>
+                                            <span>D</span>
+                                        </div>
+                                        <!-- banco --><div class="order-7 md:order-6 !rounded-lg">
+                                            <p class="font-bold text-rn-primary leading-none mb-1">BANCO SANTANDER ARGENTINA S.A.</p>
+                                            <p class="border mb-1 text-[10px]">ÚLTIMA DEUDA: <span>$326.000</span></p>
+                                            <p class="border mb-1 text-[10px]">MONTO MÁXIMO: <span>$442.000</span></p>
+                                        </div>
+                                        <!-- meses24-1 --><div class="order-3 md:order-7 !bg-transparent !p-0 flex justify-between items-start *:bg-neutral-100 *:text-[11px] *:uppercase *:rounded-full *:px-2 *:py-1">
+                                            <span>-</span>
+                                            <span>-</span>
+                                            <span class="!bg-rn-primary/10">1</span>
+                                            <span class="!bg-rn-primary/10">1</span>
+                                            <span class="!bg-rn-primary/10">1</span>
+                                            <span>-</span>
+                                            <span>-</span>
+                                            <span>-</span>
+                                            <span>-</span>
+                                            <span>-</span>
+                                            <span>-</span>
+                                            <span>-</span>
+                                        </div>
+                                        <!-- meses23-1 --><div class="order-6 md:order-8 !bg-transparent !p-0 flex justify-between items-start *:bg-neutral-100 *:text-[11px] *:uppercase *:rounded-full *:px-2 *:py-1">
+                                            <span>-</span>
+                                            <span>-</span>
+                                            <span>-</span>
+                                            <span>-</span>
+                                            <span>-</span>
+                                            <span>-</span>
+                                            <span>-</span>
+                                            <span>-</span>
+                                            <span>-</span>
+                                            <span>-</span>
+                                            <span>-</span>
+                                            <span>-</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="w-full md:max-w-[320px]">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <div class="bg-rn-secondary-light rounded-full p-1 flex justify-center items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+                                            <path fill-rule="evenodd" d="M15.988 3.012A2.25 2.25 0 0 1 18 5.25v6.5A2.25 2.25 0 0 1 15.75 14H13.5V7A2.5 2.5 0 0 0 11 4.5H8.128a2.252 2.252 0 0 1 1.884-1.488A2.25 2.25 0 0 1 12.25 1h1.5a2.25 2.25 0 0 1 2.238 2.012ZM11.5 3.25a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 .75.75v.25h-3v-.25Z" clip-rule="evenodd" />
+                                            <path fill-rule="evenodd" d="M2 7a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7Zm2 3.25a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75Zm0 3.5a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+                                        </svg>
+                                    </div>
+                                    <p class="uppercase text-sm">Existencia Fiscal</p>
+                                </div>
+                                <div class="grid grid-cols-2 gap-1 rounded-xl overflow-hidden text-[11px] leading-none uppercase *:bg-neutral-100 *:px-2 *:py-2">
+                                    <div><p class="text-rn-primary font-bold">CUIT</p></div>
+                                    <div><p>20323911216</p></div>
+                                    <div><p class="text-rn-primary font-bold">Apellido</p></div>
+                                    <div><p>Rodriguez Marcos Oscar</p></div>
+                                    <div><p class="text-rn-primary font-bold">Actividad</p></div>
+                                    <div><p>Servicios de diseño especializado</p></div>
+                                    <div><p class="text-rn-primary font-bold">Cat. Monotributo</p></div>
+                                    <div><p>A</p></div>
+                                    <div class="col-span-2"><p class="font-bold normal-case">Vigencia de la constancia 07/12/2025</p></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+
+<script src="../../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .rn-btn {
+        @apply inline-flex items-center justify-center rounded-md px-8 py-2 text-base font-medium outline;
+    }
+    .rn-btn-primary {
+        @apply bg-rn-primary hover:bg-rn-primary-dark text-white outline-none;
+    }
+    .rn-btn-primary-outline {
+        @apply bg-transparent hover:bg-rn-primary text-rn-primary hover:text-white outline-rn-primary -outline-offset-1;
+    }
+    .rn-btn-secondary {
+        @apply bg-rn-secondary hover:bg-rn-secondary-dark text-white outline-none;
+    }
+    .rn-btn-secondary-outline {
+        @apply bg-transparent hover:bg-rn-secondary text-rn-secondary hover:text-white outline-rn-secondary -outline-offset-1;
+    }
+    .rn-btn-form {
+        @apply bg-rn-primary hover:bg-rn-primary-dark text-white hover:text-white font-medium text-lg rounded-md px-4 py-3;
+    }
+    .rn-btn-form-outline {
+        @apply bg-transparent hover:bg-rn-primary text-rn-primary hover:text-white font-medium text-lg rounded-md px-4 py-3 -outline-offset-1 outline-rn-primary;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+a:hover {
+    color: #5D92FC;
+}
+
+input, select {
+    @apply px-4 py-3 border placeholder-black/25 focus:outline-none focus:border-rn-primary-dark focus:ring-rn-primary-dark w-full rounded-lg;
+}
+select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+    background-position: right 0.5rem center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+    appearance: none;
+}
+form label span {
+    @apply block px-2 font-bold;
+}

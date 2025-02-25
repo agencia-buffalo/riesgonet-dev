@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morosidades | RiesgoNet</title>
+    <link rel="stylesheet" href="../../output.css">
+</head>
+<body class="text-rn-base font-body bg-[#f0f0f0]
+bg-[url('./img/rn-bg-blur.svg')] bg-no-repeat bg-auto bg-[right_-100px_top_-200px]">
+
+    <div class="container p-4 mx-auto w-full max-w-[1220px] flex gap-4 justify-start items-start">
+
+        <main id="sectionInfo" class="flex-1 p-4 flex flex-col justify-start gap-4">
+
+            <div id="infoContent" class="py-2">
+
+                <div class="mb-4">
+                    <p>Autogestión de Moras</p>
+                </div>
+
+                <div class="grid grid-cols-1 gap-6 md:grid-cols-3 mb-8 justify-items-stretch items-stretch">
+                    
+                    <div id="adminDeMoras" class="border border-rn-primary rounded-xl bg-gradient-to-b from-[#5D92FC]/10 to-white p-4 flex flex-col justify-between">
+                        <div class="bg-[url('./img/rn-bg-item-informes.svg')] bg-no-repeat bg-right-top">
+                            <p class="text-3xl text-black/60 leading-none mb-4 pr-12">Administrador de Moras</p>
+                        </div>
+                        <button id="" class="rn-btn rn-btn-primary-outline w-full">Solicitar Informe</button>
+                    </div>
+                    
+                    <div id="cargaMasivaMorosos" class="border border-rn-primary rounded-xl bg-gradient-to-b from-[#5D92FC]/10 to-white p-4 flex flex-col justify-between">
+                        <div class="bg-[url('./img/rn-bg-item-informes.svg')] bg-no-repeat bg-right-top">
+                            <p class="text-3xl text-black/60 leading-none mb-4 pr-12">Carga Masiva de Morosos</p>
+                        </div>
+                        <button id="" class="rn-btn rn-btn-primary-outline w-full">Solicitar Informe</button>
+                    </div>
+                    
+                </div>
+
+                <!-- Autogestión de Moras | Administrador de Moras -->
+                <div class="bg-white shadow-md rounded-2xl overflow-hidden mb-8">
+                    <div class="bg-rn-secondary-light py-4 px-8">
+                        <p class="font-bold text-white text-xl">Cliente: IVAN CARTOLANO</p>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex flex-col gap-4 md:flex-row">
+                            <button id="" type="button" class="rn-btn rn-btn-form w-full uppercase">Altas Moras</button>
+                            <button id="" type="button" class="rn-btn rn-btn-form w-full uppercase">Consulta/Baja Moras</button>
+                            <button id="" type="button" class="rn-btn rn-btn-form w-full uppercase">Listado Completo Imprimir</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white shadow-md rounded-2xl overflow-hidden mb-8">
+                    <div class="bg-rn-secondary-light py-4 px-8 flex flex-col gap-4 md:flex-row md:justify-between md:items-center">
+                        <p class="font-bold text-white text-xl leading-none">ALTA MORA - AFECTAR PERSONAS</p>
+                        <div class="bg-white/50 rounded-full">
+                            <p class="text-sm flex justify-start items-center gap-2 pr-4">
+                                <span class="bg-white p-1 rounded-full w-12 h-12 flex justify-center items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                        <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z" clip-rule="evenodd" />
+                                    </svg>                                      
+                                </span>
+                                <a href="#" target="_self">CLIENTE: IVAN CARTOLANO</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <form id="altaMora" action="">
+                            <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+
+                                <label for="dni">
+                                    <span>DNI</span>
+                                    <input type="number" id="dni" name="dni" placeholder="Ingresar número" required>
+                                </label>
+
+                                <label for="sexo">
+                                    <span>Sexo</span>
+                                    <select name="sexo" id="sexo">
+                                        <option value="01">Masculino</option>
+                                        <option value="02">Femenino</option>
+                                    </select>
+                                </label>
+
+                                <label for="cuit">
+                                    <span>CUIL/CUIT</span>
+                                    <input type="number" id="cuit" name="cuit" placeholder="Ingresar número" required>
+                                </label>
+
+                                <label for="referencia">
+                                    <span>Referencia</span>
+                                    <input type="text" id="referencia" name="referencia" placeholder="Ingresar referencia" required>
+                                </label>
+
+                                <label for="nombre">
+                                    <span>Apellido y Nombre</span>
+                                    <input type="text" id="nombre" name="nombre" placeholder="Ingresar apellido y nombre" required>
+                                </label>
+
+                                <label for="monto">
+                                    <span>Monto</span>
+                                    <input type="text" id="monto" name="monto" placeholder="Ingresar monto" required>
+                                </label>
+
+                                <label for="causa">
+                                    <span>Causa</span>
+                                    <select name="causa" id="causa">
+                                        <option value="01">Préstamo personal</option>
+                                        <option value="02">Crédito</option>
+                                    </select>
+                                </label>
+
+                                <label for="agregarPersonas" class="pt-8">
+                                    <!-- <span class=""></span> -->
+                                    <a href="#" target="_blank" class="">+ Agregar personas</a>
+                                </label>
+
+                            </div>
+                            <div class="flex flex-col gap-4 mt-10 md:flex-row md:pr-4">
+                                <button id="formAltaMora" type="button" class="rn-btn rn-btn-form md:w-1/2">Afectar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="bg-white shadow-md rounded-2xl overflow-hidden mb-8">
+                    <div class="bg-rn-secondary-light py-4 px-8 flex flex-col gap-4 md:flex-row md:justify-between md:items-center">
+                        <p class="font-bold text-white text-xl leading-none">CONSULTA/BAJA MORAS - BAJA DE MOROSOS</p>
+                        <div class="bg-white/50 rounded-full">
+                            <p class="text-sm flex justify-start items-center gap-2 pr-4">
+                                <span class="bg-white p-1 rounded-full w-12 h-12 flex justify-center items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                        <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z" clip-rule="evenodd" />
+                                    </svg>                                      
+                                </span>
+                                <a href="#" target="_self">CLIENTE: IVAN CARTOLANO</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <form id="formConsultaMora" action="">
+                            <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+
+                                <label for="cuit">
+                                    <span>CUIL/CUIT</span>
+                                    <input type="number" id="cuit" name="cuit" placeholder="Ingresar número" required>
+                                </label>
+
+                                <label for="sexo">
+                                    <span>Sexo</span>
+                                    <select name="sexo" id="sexo">
+                                        <option value="01">Masculino</option>
+                                        <option value="02">Femenino</option>
+                                    </select>
+                                </label>
+
+                            </div>
+                            <div class="flex flex-col gap-4 mt-10 md:flex-row md:pr-4">
+                                <button id="consultaMora" type="button" class="rn-btn rn-btn-form md:w-1/2">Buscar</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="bg-rn-primary-light/50 rounded-xl p-4 my-10 shadow-md w-fit mx-auto md:w-1/4">
+                        <label for="dniNoMoroso" class="flex gap-2 justify-center uppercase">
+                            <input type="checkbox" name="dniNoMoroso" id="dniNoMoroso" class="w-auto" checked>
+                            DNI no moroso
+                        </label>
+                    </div>
+                </div>
+
+                <div class="bg-white shadow-md rounded-2xl overflow-hidden mb-8">
+                    <div class="bg-rn-secondary-light py-4 px-8 flex flex-col gap-4 md:flex-row md:justify-between md:items-center">
+                        <p class="font-bold text-white text-xl leading-none">LISTADO COMPLETO IMPRIMIR</p>
+                        <div class="bg-white/50 rounded-full">
+                            <p class="text-sm flex justify-start items-center gap-2 pr-4">
+                                <span class="bg-white p-1 rounded-full w-12 h-12 flex justify-center items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                        <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z" clip-rule="evenodd" />
+                                    </svg>                                      
+                                </span>
+                                <a href="#" target="_self">CLIENTE: IVAN CARTOLANO</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex flex-col items-stretch justify-center gap-2 w-full mb-8 md:flex-row md:w-full md:max-w-3xl md:justify-self-center">
+                            <div class="bg-rn-primary-light/25 px-4 py-1 rounded-full text-center flex-1">
+                                <p class="uppercase"><strong>Total Moras:</strong> <span>0</span></p>
+                            </div>
+                            <div class="bg-rn-primary-light/25 px-4 py-1 rounded-full text-center flex-1">
+                                <p class="uppercase"><strong>Monto:</strong> <span>0</span></p>
+                            </div>
+                        </div>
+
+                        <table class="border-separate w-full table-fixed text-left border-spacing-2">
+                            <thead>
+                                <tr>
+                                    <th>Fecha Mora</th>
+                                    <th>CUIT</th>
+                                    <th>Moroso</th>
+                                    <th>Monto</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="border rounded p-2 h-10">09/02/2025</td>
+                                    <td class="border rounded p-2 h-10">12-34567890-1</td>
+                                    <td class="border rounded p-2 h-10">Ivan Cartolano</td>
+                                    <td class="border rounded p-2 h-10">$ 123.456</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                </div>
+
+                <!-- Autogestión de Moras | Carga masiva de Morosos -->
+                <div class="bg-white shadow-md rounded-2xl overflow-hidden mb-8 w-full md:max-w-lg">
+                    <div class="bg-rn-secondary-light py-4 px-8 flex flex-col gap-4 md:flex-row md:justify-between md:items-center">
+                        <p class="font-bold text-white text-xl leading-none uppercase">ALTA de MORAS</p>
+                    </div>
+                    <div class="p-8">
+                        <form id="formAltaMoraArchivo" action="">
+                            <label for="" class="block">
+                                <span>Seleccione un archivo:</span>
+                                <input type="file" name="" id="">
+                            </label>
+                            <label for="" class="block mt-4">
+                                <a href="#" target="_blank">+ Ingresar otro archivo</a>
+                            </label>
+                            <div class="flex flex-col gap-4 mt-10 md:flex-row md:pr-4">
+                                <button id="altaMoraArchivo" type="button" class="rn-btn rn-btn-form md:w-1/2">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+
+<script src="../../js/main.js"></script>
+</body>
+</html>

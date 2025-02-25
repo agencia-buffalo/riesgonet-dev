@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informe de Crédito | RiesgoNet</title>
+    <link rel="stylesheet" href="../../../output.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="text-rn-base font-body bg-[#f0f0f0]
+bg-[url('./img/rn-bg-blur.svg')] bg-no-repeat bg-auto bg-[right_-100px_top_-200px]">
+
+    <div class="container p-4 mx-auto w-full max-w-[1220px] flex gap-4 justify-start items-start">
+
+        <main id="sectionInfo" class="flex-1 p-4 flex flex-col justify-start gap-4">
+
+            <div id="infoContent" class="py-2">
+
+                <div class="bg-white shadow-md rounded overflow-hidden mb-8">
+                    
+                    <div class="p-8">
+
+                        <div class="flex justify-center md:justify-end items-center mb-8">
+                            <img src="../../../img/rn-logo-header.png" alt="logo RiesgoNet" class="w-[200px] h-auto">
+                        </div>
+
+                        <div class="flex justify-center items-center mb-8 text-center">
+                            <p class="font-bold text-white bg-rn-primary uppercase rounded-full px-12 py-2">INFORME DE CRÉDITO</p>
+                        </div>
+
+                        <div class="flex flex-col gap-4 md:flex-row mb-8">
+                            <div class="bg-neutral-100 rounded-xl flex-1 p-4">
+                                <div class="mb-4 flex gap-2 justify-start items-center bg-rn-secondary-light/30 rounded-full">
+                                    <span class="bg-rn-secondary-light p-1 rounded-full w-12 h-12 flex justify-center items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                            <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z" clip-rule="evenodd" />
+                                        </svg>                                              
+                                    </span>
+                                    <p class="font-bold text-sm uppercase">Individualización</p>
+                                </div>
+                                <div class="grid grid-cols-1 gap-1 md:grid-cols-1">
+                                    <div class="grid gap-1.5 *:text-[12px] *:uppercase *:rounded-full *:px-4 *:py-1.5 *:bg-rn-primary/10 *:leading-tight">
+                                        <div><p><span class="font-normal">VALIDADA EXISTENCIA CIVICA</span></p></div>
+                                        <div><p><span class="text-rn-primary font-bold">Sexo</span> <span>M</span></p></div>
+                                        <div><p><span class="text-rn-primary font-bold">EJEMPLAR</span> <span>D</span></p></div>
+                                        <div><p><span class="text-rn-primary font-bold">DNI</span> <span>32391121</span></p></div>
+                                        <div><p><span class="text-rn-primary font-bold">CLASE</span> <span>1986</span></p></div>
+                                        <div><p><span class="text-rn-primary font-bold">REGISTRO FISCAL</span> <span>20-32391121-6</span></p></div>
+                                        <span class="!text-[10px] !bg-transparent">(si el número asignado no coincidiera, sugerimos comunicarse con mesa de ayuda, o ingresar en la consulta el cuil/cuit que Ud.posee)</span>
+                                        <div><p><span class="text-rn-primary font-bold">FECHA DE NACIMIENTO</span> <span>25/06/1986</span></p></div>
+                                        <div><p><span class="text-rn-primary font-bold">OCUPACIÓN</span> <span>SERVICIOS DE DISEÑO ESPECIALIZADO</span></p></div>
+                                        <div><p><span class="text-rn-primary font-bold">EMAIL</span> <span>markitosrodriguez@hotmail.com</span></p></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-neutral-100 rounded-xl flex-1 p-4">
+                                <div class="mb-4 flex gap-2 justify-start items-center bg-rn-secondary-light/30 rounded-full">
+                                    <span class="bg-rn-secondary-light p-1 rounded-full w-12 h-12 flex justify-center items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                            <path fill-rule="evenodd" d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" clip-rule="evenodd" />
+                                        </svg>
+                                    </span>
+                                    <p class="font-bold text-sm uppercase">Localización</p>
+                                </div>
+                                <div class="grid grid-cols-1 gap-1 md:grid-cols-1 mb-4">
+                                    <div class="grid gap-1.5 *:text-[12px] *:uppercase *:rounded-full *:px-4 *:py-1.5 *:bg-rn-primary/10 *:leading-tight">
+                                        <div><p><span class="text-rn-primary font-bold">Padrón</span> <span>7 1442</span></p></div>
+                                        <div><p><span class="text-rn-primary font-bold">Localidad</span> <span>Gral Pico</span></p></div>
+                                        <div><p><span class="text-rn-primary font-bold">Código Postal</span> <span>L6360AKF</span></p></div>
+                                        <div><p><span class="text-rn-primary font-bold">Provincia</span> <span>Buenos Aires</span></p></div>
+                                        <div><p><span class="text-rn-primary font-bold">Nacionalidad</span> <span>Argentina</span></p></div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-4 flex gap-2 justify-start items-center bg-rn-secondary-light/30 rounded-full">
+                                    <span class="bg-rn-secondary-light p-1 rounded-full w-12 h-12 flex justify-center items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                            <path d="M7.5 3.375c0-1.036.84-1.875 1.875-1.875h.375a3.75 3.75 0 0 1 3.75 3.75v1.875C13.5 8.161 14.34 9 15.375 9h1.875A3.75 3.75 0 0 1 21 12.75v3.375C21 17.16 20.16 18 19.125 18h-9.75A1.875 1.875 0 0 1 7.5 16.125V3.375Z" />
+                                            <path d="M15 5.25a5.23 5.23 0 0 0-1.279-3.434 9.768 9.768 0 0 1 6.963 6.963A5.23 5.23 0 0 0 17.25 7.5h-1.875A.375.375 0 0 1 15 7.125V5.25ZM4.875 6H6v10.125A3.375 3.375 0 0 0 9.375 19.5H16.5v1.125c0 1.035-.84 1.875-1.875 1.875h-9.75A1.875 1.875 0 0 1 3 20.625V7.875C3 6.839 3.84 6 4.875 6Z" />
+                                        </svg>
+                                    </span>
+                                    <p class="font-bold text-sm uppercase">Fuente</p>
+                                </div>
+                                <div class="grid grid-cols-1 gap-1 md:grid-cols-1">
+                                    <div class="grid gap-1.5 *:text-[12px] *:uppercase *:rounded-full *:px-4 *:py-1.5 *:bg-rn-secondary-light/20 *:leading-tight">
+                                        <div><p><span class="text-rn-secondary font-bold">FUENTE</span> <span>Relevamiento propio</span></p></div>
+                                        <div><p><span class="text-rn-secondary font-bold">REGISTROS PÚBLICOS</span> <span>On line</span></p></div>
+                                        <div><p><span class="text-rn-secondary font-bold">AFIP</span> <span>On line</span></p></div>
+                                        <div><p><span class="text-rn-secondary font-bold">VS</span> <span>Internet</span></p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- datos complementarios -->
+                        <div class="flex flex-col gap-4 md:flex-row mb-1">
+                            <div class="rounded-xl flex-1 p-4">
+                                <div class="mb-4 flex gap-2 justify-start items-center bg-rn-secondary-light/30 rounded-full md:inline-flex md:pr-4">
+                                    <span class="bg-rn-secondary-light p-1 rounded-full w-12 h-12 flex justify-center items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                            <path fill-rule="evenodd" d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z" clip-rule="evenodd" />
+                                        </svg>
+                                    </span>
+                                    <p class="font-bold text-sm uppercase">Datos Complementarios</p>
+                                </div>
+                                <p class="uppercase mb-4 text-sm">Otros domicilios</p>
+                                
+                                <!-- table -->
+                                <table class="border-collapse w-full table-fixed text-left border-spacing-2 bg-neutral-100 text-xs rounded-xl overflow-hidden break-words leading-none">
+                                    <thead>
+                                        <tr class="*:text-rn-primary *:bg-rn-primary-light/20 *:border-white *:border-solid *:border-2 *:p-2 *:h-10 *:uppercase">
+                                            <th>Calle</th>
+                                            <th>Nro.</th>
+                                            <th>Localidad</th>
+                                            <th>Cód. Postal</th>
+                                            <th>Provincia</th>
+                                            <th>Fuente</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="*:border-white *:border-solid *:border-2 *:p-2 *:h-10">
+                                            <td>7</td>
+                                            <td>1442</td>
+                                            <td>General Pico</td>
+                                            <td>L6360AKF</td>
+                                            <td>La Pampa</td>
+                                            <td>Domicilio</td>
+                                        </tr>
+                                        <tr class="*:border-white *:border-solid *:border-2 *:p-2 *:h-10">
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr class="*:border-white *:border-solid *:border-2 *:p-2 *:h-10">
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+
+                        <!-- posibles tel nombre -->
+                        <div class="flex flex-col gap-4 md:flex-row mb-1">
+                            <div class="rounded-xl flex-1 p-4">
+                                <div class="mb-2 flex gap-2 justify-start items-center bg-rn-secondary-light/30 rounded-full">
+                                    <span class="bg-rn-secondary-light p-1 rounded-full w-12 h-12 flex justify-center items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                            <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" clip-rule="evenodd" />
+                                        </svg>
+                                    </span>
+                                    <div class="py-2 pr-4 flex flex-col gap-1 flex-1">
+                                        <p class="font-normal text-sm uppercase leading-none">Posibles teléfonos de tierra, busqueda por apellido y nombre:</p>
+                                        <p class="bg-white uppercase font-bold text-sm rounded-full px-3 self-start">RODRIGUEZ MARCOS OSCAR</p>
+                                    </div>
+                                </div>
+                                <!-- table -->
+                                <table class="border-collapse w-full table-fixed text-left border-spacing-2 bg-neutral-100 text-xs rounded-xl overflow-hidden break-words leading-none">
+                                    <thead>
+                                        <tr class="*:text-rn-primary *:bg-rn-primary-light/20 *:border-white *:border-solid *:border-2 *:p-2 *:h-10 *:uppercase">
+                                            <th>Nombre</th>
+                                            <th>Domicilio</th>
+                                            <th>Teléfono</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="*:border-white *:border-solid *:border-2 *:p-2 *:h-10">
+                                            <td>RODRIGUEZ MARCOS OSCAR</td>
+                                            <td>TTE. GRAL. JUAN DOMINGO PERON 3938 5 A C1198AAX, ALMAGRO, CAPITAL FEDERAL</td>
+                                            <td>(011) 4870 - 7508</td>
+                                        </tr>
+                                        <tr class="*:border-white *:border-solid *:border-2 *:p-2 *:h-10">
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr class="*:border-white *:border-solid *:border-2 *:p-2 *:h-10">
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- posibles tel padron -->
+                        <div class="flex flex-col gap-4 md:flex-row mb-1">
+                            <div class="rounded-xl flex-1 p-4">
+                                <div class="mb-2 flex gap-2 justify-start items-center bg-rn-secondary-light/30 rounded-full">
+                                    <span class="bg-rn-secondary-light p-1 rounded-full w-12 h-12 flex justify-center items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                            <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" clip-rule="evenodd" />
+                                        </svg>
+                                    </span>
+                                    <div class="py-2 pr-4 flex flex-col gap-1 flex-1">
+                                        <p class="font-normal text-sm uppercase leading-none">Posibles teléfonos de tierra, busqueda por domicilio de padron electoral:</p>
+                                        <p class="bg-white uppercase font-bold text-sm rounded-full px-3 self-start">71442</p>
+                                    </div>
+                                </div>
+                                <!-- table -->
+                                <table class="border-collapse w-full table-fixed text-left border-spacing-2 bg-neutral-100 text-xs rounded-xl overflow-hidden break-words leading-none">
+                                    
+                                    <tbody>
+                                        <tr class="*:border-white *:border-solid *:border-2 *:p-2 *:h-10">
+                                            <td>No se registran datos</td>
+                                        </tr>
+                                    </tbody>
+
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- posibles tel fuentes -->
+                        <div class="flex flex-col gap-4 md:flex-row mb-1">
+                            <div class="rounded-xl flex-1 p-4">
+                                <div class="mb-2 flex gap-2 justify-start items-center bg-rn-secondary-light/30 rounded-full">
+                                    <span class="bg-rn-secondary-light p-1 rounded-full w-12 h-12 flex justify-center items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                            <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" clip-rule="evenodd" />
+                                        </svg>
+                                    </span>
+                                    <div class="py-2 pr-4 flex flex-col gap-1 flex-1">
+                                        <p class="font-normal text-sm uppercase leading-none">Posibles teléfonos de tierra del causante, Otras fuentes:</p>
+                                        <!-- <p class="bg-white uppercase font-bold text-sm rounded-full px-3 self-start"></p> -->
+                                    </div>
+                                </div>
+                                <!-- table -->
+                                <table class="border-collapse w-full table-fixed text-left border-spacing-2 bg-neutral-100 text-xs rounded-xl overflow-hidden break-words leading-none">
+                                    
+                                    <tbody>
+                                        <tr class="*:border-white *:border-solid *:border-2 *:p-2 *:h-10">
+                                            <td>No se registran datos</td>
+                                        </tr>
+                                    </tbody>
+
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- entidades -->
+                        <div class="flex flex-col gap-4 md:flex-row mb-1">
+                            <div class="rounded-xl flex-1 p-4">
+                                <p class="uppercase leading-none text-sm mb-2">Entidades Financieras y Bancarias con las que opera</p>
+                                <!-- table -->
+                                <table class="border-collapse w-full table-fixed text-left border-spacing-2 bg-neutral-100 text-xs rounded-xl overflow-hidden break-words leading-none md:table-auto">
+                                    <thead>
+                                        <tr class="*:text-rn-primary *:bg-rn-primary-light/20 *:border-white *:border-solid *:border-2 *:p-2 *:h-10 *:uppercase">
+                                            <th>Nombre</th>
+                                            <th>Domicilio</th>
+                                            <th>Teléfono</th>
+                                            <th>Cumplimiento</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="*:border-white *:border-solid *:border-2 *:p-2 *:h-10">
+                                            <td>BANCO SANTANDER ARGENTINA S.A. </td>
+                                            <td>CASA CENTRAL BARTOLOME MITRE 480 - CAPITAL FEDERAL - CAPITAL FEDERAL</td>
+                                            <td>011 4341-1000</td>
+                                            <td>Normal</td>
+                                        </tr>
+                                        <tr class="*:border-white *:border-solid *:border-2 *:p-2 *:h-10">
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- indicadores de actividad -->
+                        <div class="p-4 mb-2">
+                            <div class="mb-4 flex gap-2 justify-start items-center bg-rn-secondary-light/30 rounded-full md:inline-flex md:pr-4">
+                                <span class="bg-rn-secondary-light p-1 rounded-full w-12 h-12 flex justify-center items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                        <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                                <p class="font-bold text-sm uppercase">Indicadores de Actividad</p>
+                            </div>
+
+                            <div class="grid gap-4 md:grid-cols-[2fr_1fr]">
+                                <div class="w-full">
+                                    <div class="flex items-center gap-2 mb-2">
+                                        <!-- <div class="bg-rn-secondary-light rounded-full p-1 flex justify-center items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+                                                <path fill-rule="evenodd" d="M15.988 3.012A2.25 2.25 0 0 1 18 5.25v6.5A2.25 2.25 0 0 1 15.75 14H13.5V7A2.5 2.5 0 0 0 11 4.5H8.128a2.252 2.252 0 0 1 1.884-1.488A2.25 2.25 0 0 1 12.25 1h1.5a2.25 2.25 0 0 1 2.238 2.012ZM11.5 3.25a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 .75.75v.25h-3v-.25Z" clip-rule="evenodd" />
+                                                <path fill-rule="evenodd" d="M2 7a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7Zm2 3.25a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75Zm0 3.5a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+                                            </svg>
+                                        </div> -->
+                                        <p class="uppercase text-sm">Existencia Fiscal</p>
+                                    </div>
+                                    <div class="grid grid-cols-2 gap-1 rounded-xl overflow-hidden text-[11px] leading-none uppercase *:bg-neutral-100 *:px-2 *:py-2">
+                                        <div><p class="text-rn-primary font-bold">CUIT</p></div>
+                                        <div><p>20323911216</p></div>
+                                        <div><p class="text-rn-primary font-bold">Apellido</p></div>
+                                        <div><p>Rodriguez Marcos Oscar</p></div>
+                                        <div><p class="text-rn-primary font-bold">Actividad</p></div>
+                                        <div><p>Servicios de diseño especializado</p></div>
+                                        <div><p class="text-rn-primary font-bold">Cat. Monotributo</p></div>
+                                        <div><p>A</p></div>
+                                        <div class="col-span-2 text-center"><p class="font-normal normal-case">La fecha de vigencia indica la última actualización publicada</p></div>
+                                        <div class="col-span-2 text-center"><p class="font-bold normal-case">Información vigente al 07/12/2024</p></div>
+                                    </div>
+                                </div>
+                                <div class="w-full md:pt-7">
+                                    <div class="mb-2">
+                                        <span class="bg-rn-secondary-light p-1 rounded-full w-8 h-8 flex justify-center items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                                <path d="M7.5 3.375c0-1.036.84-1.875 1.875-1.875h.375a3.75 3.75 0 0 1 3.75 3.75v1.875C13.5 8.161 14.34 9 15.375 9h1.875A3.75 3.75 0 0 1 21 12.75v3.375C21 17.16 20.16 18 19.125 18h-9.75A1.875 1.875 0 0 1 7.5 16.125V3.375Z" />
+                                                <path d="M15 5.25a5.23 5.23 0 0 0-1.279-3.434 9.768 9.768 0 0 1 6.963 6.963A5.23 5.23 0 0 0 17.25 7.5h-1.875A.375.375 0 0 1 15 7.125V5.25ZM4.875 6H6v10.125A3.375 3.375 0 0 0 9.375 19.5H16.5v1.125c0 1.035-.84 1.875-1.875 1.875h-9.75A1.875 1.875 0 0 1 3 20.625V7.875C3 6.839 3.84 6 4.875 6Z" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="grid grid-cols-1 gap-1 md:grid-cols-1">
+                                        <div class="grid gap-1.5 *:text-[12px] *:uppercase *:rounded-full *:px-4 *:py-1.5 *:bg-rn-secondary-light/20 *:leading-tight">
+                                            <div><p><span class="text-rn-secondary font-bold">FUENTE</span> <span>Relevamiento propio</span></p></div>
+                                            <div><p><span class="text-rn-secondary font-bold">REGISTROS PÚBLICOS</span> <span>On line</span></p></div>
+                                            <div><p><span class="text-rn-secondary font-bold">AFIP</span> <span>On line</span></p></div>
+                                            <div><p><span class="text-rn-secondary font-bold">VS</span> <span>Internet</span></p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- historia laboral -->
+                        <div class="p-4 mb-4">
+                            <div class="mb-4 flex gap-2 justify-start items-center bg-rn-secondary-light/30 rounded-full md:inline-flex md:pr-4">
+                                <span class="bg-rn-secondary-light p-1 rounded-full w-12 h-12 flex justify-center items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                        <path fill-rule="evenodd" d="M7.5 5.25a3 3 0 0 1 3-3h3a3 3 0 0 1 3 3v.205c.933.085 1.857.197 2.774.334 1.454.218 2.476 1.483 2.476 2.917v3.033c0 1.211-.734 2.352-1.936 2.752A24.726 24.726 0 0 1 12 15.75c-2.73 0-5.357-.442-7.814-1.259-1.202-.4-1.936-1.541-1.936-2.752V8.706c0-1.434 1.022-2.7 2.476-2.917A48.814 48.814 0 0 1 7.5 5.455V5.25Zm7.5 0v.09a49.488 49.488 0 0 0-6 0v-.09a1.5 1.5 0 0 1 1.5-1.5h3a1.5 1.5 0 0 1 1.5 1.5Zm-3 8.25a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" clip-rule="evenodd" />
+                                        <path d="M3 18.4v-2.796a4.3 4.3 0 0 0 .713.31A26.226 26.226 0 0 0 12 17.25c2.892 0 5.68-.468 8.287-1.335.252-.084.49-.189.713-.311V18.4c0 1.452-1.047 2.728-2.523 2.923-2.12.282-4.282.427-6.477.427a49.19 49.19 0 0 1-6.477-.427C4.047 21.128 3 19.852 3 18.4Z" />
+                                    </svg>
+                                </span>
+                                <p class="font-bold text-sm uppercase">Historia Laboral</p>
+                            </div>
+
+                            <div class="grid gap-4 md:grid-cols-[1fr] mb-4">
+                                <div class="w-full">
+                                    <div class="grid grid-cols-2 gap-1 rounded-xl overflow-hidden text-[11px] leading-none uppercase *:bg-neutral-100 *:px-2 *:py-2">
+                                        <div><p class="text-rn-primary font-bold">CUIT</p></div>
+                                        <div><p>20323911216</p></div>
+                                        <div><p class="text-rn-primary font-bold">Apellido y Nombre</p></div>
+                                        <div><p>Rodriguez Marcos Oscar</p></div>
+                                        <div><p class="text-rn-primary font-bold">Sexo</p></div>
+                                        <div><p>M</p></div>
+                                        <div><p class="text-rn-primary font-bold">Fecha de nacimiento</p></div>
+                                        <div><p>25/06/1986</p></div>
+                                    </div>
+                                </div>
+                                <table class="border-collapse w-full table-fixed text-left border-spacing-2 bg-neutral-100 text-xs rounded-xl overflow-hidden break-words leading-none md:table-auto">
+                                    <thead>
+                                        <tr class="*:text-rn-primary *:bg-rn-primary-light/20 *:border-white *:border-solid *:border-2 *:p-2 *:h-5 *:uppercase">
+                                            <th>CUIL</th>
+                                            <th>CUIT Empleador</th>
+                                            <th>Empleador</th>
+                                            <th>Desde</th>
+                                            <th>Hasta</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="*:border-white *:border-solid *:border-2 *:p-2 *:h5">
+                                            <td>20-32391121-6</td>
+                                            <td>30-50012088-2</td>
+                                            <td>ASOCIACION DE COOPERATIVAS ARG</td>
+                                            <td>2024-04</td>
+                                            <td>2024-09</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="grid gap-4 bg-neutral-100 p-8 rounded-xl md:grid-cols-[2fr_1fr]">
+                                <div class="flex flex-col gap-8 md:flex-row md:items-center md:justify-center">
+                                    <div class="flex-auto">
+                                        <!-- grafico -->
+                                        <canvas id="graficoInformeCredito"></canvas>
+                                    </div>
+                                    <div class="flex-auto">
+                                        <p class="text-2xl uppercase font-bold text-rn-primary mb-4">Score 3</p>
+                                        <p class="text-xs font-normal">El score se calcula en base a datos demográficos y de consumo.</p>
+                                        <p class="text-xs font-bold">Información vigente al 2024-09</p>
+                                    </div>
+                                </div>
+                                <div class="w-full">
+                                    <div class="mb-2">
+                                        <span class="bg-rn-secondary-light p-1 rounded-full w-8 h-8 flex justify-center items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                                <path d="M7.5 3.375c0-1.036.84-1.875 1.875-1.875h.375a3.75 3.75 0 0 1 3.75 3.75v1.875C13.5 8.161 14.34 9 15.375 9h1.875A3.75 3.75 0 0 1 21 12.75v3.375C21 17.16 20.16 18 19.125 18h-9.75A1.875 1.875 0 0 1 7.5 16.125V3.375Z" />
+                                                <path d="M15 5.25a5.23 5.23 0 0 0-1.279-3.434 9.768 9.768 0 0 1 6.963 6.963A5.23 5.23 0 0 0 17.25 7.5h-1.875A.375.375 0 0 1 15 7.125V5.25ZM4.875 6H6v10.125A3.375 3.375 0 0 0 9.375 19.5H16.5v1.125c0 1.035-.84 1.875-1.875 1.875h-9.75A1.875 1.875 0 0 1 3 20.625V7.875C3 6.839 3.84 6 4.875 6Z" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="grid grid-cols-1 gap-1 md:grid-cols-1">
+                                        <div class="grid gap-1.5 *:text-[12px] *:uppercase *:rounded-full *:px-4 *:py-1.5 *:bg-rn-secondary-light/20 *:leading-tight">
+                                            <div><p><span class="text-rn-secondary font-bold">FUENTE</span> <span>Relevamiento propio</span></p></div>
+                                            <div><p><span class="text-rn-secondary font-bold">REGISTROS PÚBLICOS</span> <span>On line</span></p></div>
+                                            <div><p><span class="text-rn-secondary font-bold">AFIP</span> <span>On line</span></p></div>
+                                            <div><p><span class="text-rn-secondary font-bold">VS</span> <span>Internet</span></p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="uppercase text-sm leading-none mt-8 mb-4">Transferencias de Fondos de Comercio</p>
+                                    <p class="text-sm">No se registran datos</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- banco central -->
+                        <div class="p-4">
+                            <div class="mb-4 flex gap-2 justify-start items-center bg-rn-secondary-light/30 rounded-full md:inline-flex md:pr-4">
+                                <span class="bg-rn-secondary-light p-1 rounded-full w-12 h-12 flex justify-center items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                        <path d="M11.584 2.376a.75.75 0 0 1 .832 0l9 6a.75.75 0 1 1-.832 1.248L12 3.901 3.416 9.624a.75.75 0 0 1-.832-1.248l9-6Z" />
+                                        <path fill-rule="evenodd" d="M20.25 10.332v9.918H21a.75.75 0 0 1 0 1.5H3a.75.75 0 0 1 0-1.5h.75v-9.918a.75.75 0 0 1 .634-.74A49.109 49.109 0 0 1 12 9c2.59 0 5.134.202 7.616.592a.75.75 0 0 1 .634.74Zm-7.5 2.418a.75.75 0 0 0-1.5 0v6.75a.75.75 0 0 0 1.5 0v-6.75Zm3-.75a.75.75 0 0 1 .75.75v6.75a.75.75 0 0 1-1.5 0v-6.75a.75.75 0 0 1 .75-.75ZM9 12.75a.75.75 0 0 0-1.5 0v6.75a.75.75 0 0 0 1.5 0v-6.75Z" clip-rule="evenodd" />
+                                        <path d="M12 7.875a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z" />
+                                    </svg>
+                                </span>
+                                <p class="font-bold text-sm uppercase flex-1">Fuente Banco Central de la República Argentina</p>
+                            </div>
+                            
+                            <div class="grid gap-2 md:grid-cols-[1fr]">
+                                <div class="w-full">
+                                    <div class="flex items-center gap-2 mb-2">
+                                        <p class="uppercase text-sm leading-none">Central de deudores del sistema financiero</p>
+                                    </div>
+                                </div>
+                                <div class="w-full mt-0">
+                                    <div class="rounded-xl p-0">
+                                        <div class="grid grid-cols-1 gap-1 mb-2 *:text-[11px] *:uppercase *:rounded-full *:px-4 *:py-1 *:bg-rn-primary/10">
+                                            <div class="flex flex-col justify-between items-center !bg-rn-primary-light/60 md:flex-row">
+                                                <p class="text-rn-primary text-sm"><strong>Resúmen Consolidado</strong></p>
+                                            </div>
+                                            <div class="flex flex-col justify-between items-center md:flex-row">
+                                                <p><strong>RODRIGUEZ, MARCOS OSCAR</strong></p>
+                                                <p><span>INFORMACION ACTUALIZADA AL 2024-10</span></p>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- ajustar responsive -->
+                                        <div class="grid grid-cols-1 md:grid-cols-[1fr_2fr_2fr] gap-1 *:text-[11px] *:uppercase *:rounded-full *:px-2 *:py-1 *:bg-neutral-100 *:text-center">
+                                            <!-- año --><div class="order-0 md:order-0"><p class="font-bold text-rn-primary">Año</p></div>
+                                            <!-- 2024 --><div class="order-1 md:order-1"><p>2024</p></div>
+                                            <!-- 2023 --><div class="order-4 md:order-2"><p>2023</p></div>
+                                            <!-- mes --><div class="hidden md:block md:order-3"><p class="font-bold text-rn-primary">Mes</p></div>
+                                            <!-- meses24 --><div class="order-2 md:order-4 !bg-transparent !p-0 flex justify-between items-center *:bg-neutral-100 *:text-[11px] *:uppercase *:rounded-full *:px-2 *:py-1">
+                                                <span>E</span>
+                                                <span>F</span>
+                                                <span>M</span>
+                                                <span>A</span>
+                                                <span>M</span>
+                                                <span>J</span>
+                                                <span>J</span>
+                                                <span>A</span>
+                                                <span>S</span>
+                                                <span>O</span>
+                                                <span>N</span>
+                                                <span>D</span>
+                                            </div>
+                                            <!-- meses23 --><div class="order-5 md:order-5 !bg-transparent !p-0 flex justify-between items-center *:bg-neutral-100 *:text-[11px] *:uppercase *:rounded-full *:px-2 *:py-1">
+                                                <span>E</span>
+                                                <span>F</span>
+                                                <span>M</span>
+                                                <span>A</span>
+                                                <span>M</span>
+                                                <span>J</span>
+                                                <span>J</span>
+                                                <span>A</span>
+                                                <span>S</span>
+                                                <span>O</span>
+                                                <span>N</span>
+                                                <span>D</span>
+                                            </div>
+                                            <!-- banco --><div class="order-7 md:order-6 !rounded-lg">
+                                                <p class="font-bold text-rn-primary leading-none mb-1">BANCO SANTANDER ARGENTINA S.A.</p>
+                                                <p class="border mb-1 text-[10px]">ÚLTIMA DEUDA: <span>$326.000</span></p>
+                                                <p class="border mb-1 text-[10px]">MONTO MÁXIMO: <span>$442.000</span></p>
+                                            </div>
+                                            <!-- meses24-1 --><div class="order-3 md:order-7 !bg-transparent !p-0 flex justify-between items-start *:bg-neutral-100 *:text-[11px] *:uppercase *:rounded-full *:px-2 *:py-1">
+                                                <span>-</span>
+                                                <span>-</span>
+                                                <span class="!bg-rn-primary/10">1</span>
+                                                <span class="!bg-rn-primary/10">1</span>
+                                                <span class="!bg-rn-primary/10">1</span>
+                                                <span>-</span>
+                                                <span>-</span>
+                                                <span>-</span>
+                                                <span>-</span>
+                                                <span>-</span>
+                                                <span>-</span>
+                                                <span>-</span>
+                                            </div>
+                                            <!-- meses23-1 --><div class="order-6 md:order-8 !bg-transparent !p-0 flex justify-between items-start *:bg-neutral-100 *:text-[11px] *:uppercase *:rounded-full *:px-2 *:py-1">
+                                                <span>-</span>
+                                                <span>-</span>
+                                                <span>-</span>
+                                                <span>-</span>
+                                                <span>-</span>
+                                                <span>-</span>
+                                                <span>-</span>
+                                                <span>-</span>
+                                                <span>-</span>
+                                                <span>-</span>
+                                                <span>-</span>
+                                                <span>-</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- archivo positivo -->
+                        <div class="p-4">
+                            <div class="grid gap-2 md:grid-cols-[1fr]">
+                                <div class="w-full">
+                                    <div class="flex gap-2 justify-start items-center uppercase bg-rn-primary-light/60 rounded-full pe-4 py-0 mb-2">
+                                        <span class="bg-rn-primary rounded-full p-1.5 flex justify-center items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="size-4">
+                                                <path fill-rule="evenodd" d="M5.625 1.5H9a3.75 3.75 0 0 1 3.75 3.75v1.875c0 1.036.84 1.875 1.875 1.875H16.5a3.75 3.75 0 0 1 3.75 3.75v7.875c0 1.035-.84 1.875-1.875 1.875H5.625a1.875 1.875 0 0 1-1.875-1.875V3.375c0-1.036.84-1.875 1.875-1.875ZM12.75 12a.75.75 0 0 0-1.5 0v2.25H9a.75.75 0 0 0 0 1.5h2.25V18a.75.75 0 0 0 1.5 0v-2.25H15a.75.75 0 0 0 0-1.5h-2.25V12Z" clip-rule="evenodd" />
+                                                <path d="M14.25 5.25a5.23 5.23 0 0 0-1.279-3.434 9.768 9.768 0 0 1 6.963 6.963A5.23 5.23 0 0 0 16.5 7.5h-1.875a.375.375 0 0 1-.375-.375V5.25Z" />
+                                            </svg>
+                                        </span>
+                                        <p class="text-rn-primary text-sm"><strong>Archivo positivo</strong></p>
+                                    </div>
+                                    <table class="border-collapse w-full table-fixed text-left border-spacing-2 bg-neutral-100 text-xs rounded-xl overflow-hidden break-words leading-none md:table-auto">
+                                        <thead>
+                                            <tr class="*:text-rn-primary *:bg-rn-primary-light/20 *:border-white *:border-solid *:border-2 *:p-2 *:h-5 *:uppercase">
+                                                <th>CUIT</th>
+                                                <th>Denominación</th>
+                                                <th>Situación</th>
+                                                <th>Monto</th>
+                                                <th>Entidad</th>
+                                                <th>Período</th>
+                                                <th>Vigencia</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="*:border-white *:border-solid *:border-2 *:p-2 *:h5">
+                                                <td>20-32391121-6</td>
+                                                <td>RODRIGUEZ MARCOS OSCAR</td>
+                                                <td class="text-rn-secondary">NORMAL</td>
+                                                <td>$326000</td>
+                                                <td>BANCO SANTANDER ARGENTINA S.A.</td>
+                                                <td>2024-10</td>
+                                                <td>S</td>
+                                            </tr>
+                                            <tr class="*:border-white *:border-solid *:border-2 *:p-2 *:h5">
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td class="text-rn-secondary">-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- archivo negativo -->
+                        <div class="p-4">
+                            <div class="grid gap-2 md:grid-cols-[1fr]">
+                                <div class="w-full">
+                                    <div class="flex gap-2 justify-start items-center uppercase bg-rn-primary-light/60 rounded-full pe-4 py-0 mb-2">
+                                        <span class="bg-rn-primary rounded-full p-1.5 flex justify-center items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="size-4">
+                                                <path fill-rule="evenodd" d="M5.625 1.5H9a3.75 3.75 0 0 1 3.75 3.75v1.875c0 1.036.84 1.875 1.875 1.875H16.5a3.75 3.75 0 0 1 3.75 3.75v7.875c0 1.035-.84 1.875-1.875 1.875H5.625a1.875 1.875 0 0 1-1.875-1.875V3.375c0-1.036.84-1.875 1.875-1.875ZM9.75 14.25a.75.75 0 0 0 0 1.5H15a.75.75 0 0 0 0-1.5H9.75Z" clip-rule="evenodd" />
+                                                <path d="M14.25 5.25a5.23 5.23 0 0 0-1.279-3.434 9.768 9.768 0 0 1 6.963 6.963A5.23 5.23 0 0 0 16.5 7.5h-1.875a.375.375 0 0 1-.375-.375V5.25Z" />
+                                            </svg>
+                                        </span>
+                                        <p class="text-rn-primary text-sm"><strong>Archivo negativo</strong></p>
+                                    </div>
+                                    <p class="uppercase text-sm">Pasivos En El Sector Financiero</p>
+                                    <p class="text-xs">No se registran datos.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- cheques rechazados -->
+                        <div class="p-4">
+                            <div class="grid gap-2 md:grid-cols-[1fr]">
+                                <div class="w-full">
+                                    <div class="flex gap-2 justify-start items-center uppercase bg-rn-primary-light/60 rounded-full pe-4 py-0 mb-2">
+                                        <span class="bg-rn-primary rounded-full p-1.5 flex justify-center items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="size-4">
+                                                <path d="M12 7.5a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5Z" />
+                                                <path fill-rule="evenodd" d="M1.5 4.875C1.5 3.839 2.34 3 3.375 3h17.25c1.035 0 1.875.84 1.875 1.875v9.75c0 1.036-.84 1.875-1.875 1.875H3.375A1.875 1.875 0 0 1 1.5 14.625v-9.75ZM8.25 9.75a3.75 3.75 0 1 1 7.5 0 3.75 3.75 0 0 1-7.5 0ZM18.75 9a.75.75 0 0 0-.75.75v.008c0 .414.336.75.75.75h.008a.75.75 0 0 0 .75-.75V9.75a.75.75 0 0 0-.75-.75h-.008ZM4.5 9.75A.75.75 0 0 1 5.25 9h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75H5.25a.75.75 0 0 1-.75-.75V9.75Z" clip-rule="evenodd" />
+                                                <path d="M2.25 18a.75.75 0 0 0 0 1.5c5.4 0 10.63.722 15.6 2.075 1.19.324 2.4-.558 2.4-1.82V18.75a.75.75 0 0 0-.75-.75H2.25Z" />
+                                            </svg>
+                                        </span>
+                                        <p class="text-rn-primary text-sm"><strong>Cheques Rechazados</strong></p>
+                                    </div>
+                                    <p class="text-xs">No se registran datos.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ant. judiciales -->
+                        <div class="p-4">
+
+                            <div class="mb-4 flex gap-2 justify-start items-center bg-rn-secondary-light/30 rounded-full md:inline-flex md:pr-4">
+                                <span class="bg-rn-secondary-light p-1 rounded-full w-12 h-12 flex justify-center items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                        <path fill-rule="evenodd" d="M12 2.25a.75.75 0 0 1 .75.75v.756a49.106 49.106 0 0 1 9.152 1 .75.75 0 0 1-.152 1.485h-1.918l2.474 10.124a.75.75 0 0 1-.375.84A6.723 6.723 0 0 1 18.75 18a6.723 6.723 0 0 1-3.181-.795.75.75 0 0 1-.375-.84l2.474-10.124H12.75v13.28c1.293.076 2.534.343 3.697.776a.75.75 0 0 1-.262 1.453h-8.37a.75.75 0 0 1-.262-1.453c1.162-.433 2.404-.7 3.697-.775V6.24H6.332l2.474 10.124a.75.75 0 0 1-.375.84A6.723 6.723 0 0 1 5.25 18a6.723 6.723 0 0 1-3.181-.795.75.75 0 0 1-.375-.84L4.168 6.241H2.25a.75.75 0 0 1-.152-1.485 49.105 49.105 0 0 1 9.152-1V3a.75.75 0 0 1 .75-.75Zm4.878 13.543 1.872-7.662 1.872 7.662h-3.744Zm-9.756 0L5.25 8.131l-1.872 7.662h3.744Z" clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                                <p class="font-bold text-sm uppercase flex-1">Antecedentes Judiciales</p>
+                            </div>
+                            
+                            <div class="grid gap-2 md:grid-cols-[1fr]">
+                                <div class="w-full">
+                                    <div class="flex items-center gap-2 mb-2">
+                                        <p class="uppercase text-sm leading-none">Demandas</p>
+                                    </div>
+                                </div>
+                                <div class="w-full mt-0">
+                                    <div class="rounded-xl p-0">
+                                        <div class="grid grid-cols-1 gap-1 mb-6 *:text-[11px] *:leading-none *:uppercase *:rounded *:px-4 *:py-1 *:bg-rn-primary/10 md:*:rounded-full">
+                                            <div class="flex flex-col justify-start items-start md:flex-row">
+                                                <p class="text-rn-primary"><strong>(9758545) RODRIGUEZ MARCOS ALEJANDRO</strong></p>
+                                            </div>
+                                            <div class="flex flex-col justify-start items-start md:flex-row">
+                                                <p><strong>22/11/2024 JUICIO EJECUTIVO POR GERVASI CAROLINA FABIANA</strong></p>
+                                            </div>
+                                            <div class="flex flex-col gap-2 justify-start items-start md:flex-row">
+                                                <p class="text-rn-primary"><strong>Tribunal</strong></p>
+                                                <p class="text-rn-base">CIV Y COM DE CAPITAL FEDERAL</p>
+                                                <p class="text-rn-primary"><strong>Juzgado</strong></p>
+                                                <p class="text-rn-base">012</p>
+                                                <p class="text-rn-primary"><strong>Secretaria</strong></p>
+                                                <p class="text-rn-base">012</p>
+                                                <p class="text-rn-primary"><strong>Jurisdicción</strong></p>
+                                                <p class="text-rn-base">CABA</p>
+                                            </div>
+                                            <div class="flex flex-col gap-2 justify-start items-start md:flex-row">
+                                                <p class="text-rn-primary"><strong>CATEGORÍA INFORMACIÓN</strong></p>
+                                                <p class="text-rn-base">PÚBLICA</p>
+                                            </div>
+                                            <div class="flex flex-col gap-2 justify-start items-start md:flex-row">
+                                                <p class="text-rn-primary"><strong>FUENTE</strong></p>
+                                                <p class="text-rn-base">BOLETÍN OFICIAL DE LA CAPITAL FEDERAL DE FECHA: 22/11/2024</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="grid grid-cols-1 gap-1 mb-2 *:text-[11px] *:leading-none *:uppercase *:rounded *:px-4 *:py-1 *:bg-rn-primary/10 md:*:rounded-full">
+                                            <div class="flex flex-col justify-start items-start md:flex-row">
+                                                <p class="text-rn-primary"><strong>(9739617) RODRIGUEZ MARCOS</strong></p>
+                                            </div>
+                                            <div class="flex flex-col justify-start items-start md:flex-row">
+                                                <p><strong>24/09/2024 JUICIO EJECUTIVO POR RHODIUM SRL</strong></p>
+                                            </div>
+                                            <div class="flex flex-col gap-2 justify-start items-start md:flex-row">
+                                                <p class="text-rn-primary"><strong>Tribunal</strong></p>
+                                                <p class="text-rn-base">CIV Y COM DE CAPITAL FEDERAL</p>
+                                                <p class="text-rn-primary"><strong>Juzgado</strong></p>
+                                                <p class="text-rn-base">012</p>
+                                                <p class="text-rn-primary"><strong>Secretaria</strong></p>
+                                                <p class="text-rn-base">012</p>
+                                                <p class="text-rn-primary"><strong>Jurisdicción</strong></p>
+                                                <p class="text-rn-base">CABA</p>
+                                            </div>
+                                            <div class="flex flex-col gap-2 justify-start items-start md:flex-row">
+                                                <p class="text-rn-primary"><strong>CATEGORÍA INFORMACIÓN</strong></p>
+                                                <p class="text-rn-base">PÚBLICA</p>
+                                            </div>
+                                            <div class="flex flex-col gap-2 justify-start items-start md:flex-row">
+                                                <p class="text-rn-primary"><strong>FUENTE</strong></p>
+                                                <p class="text-rn-base">BOLETÍN OFICIAL DE LA CAPITAL FEDERAL DE FECHA: 22/11/2024</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- ant. bancarios -->
+                        <div class="p-4">
+                            <div class="mb-2 flex gap-2 justify-start items-center bg-rn-secondary-light/30 rounded-full md:inline-flex md:pr-4">
+                                <span class="bg-rn-secondary-light p-1 rounded-full w-12 h-12 flex justify-center items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                    </svg>
+                                </span>
+                                <p class="font-bold text-sm uppercase flex-1">Antecedentes bancarios</p>
+                            </div>
+                            <!-- INHABILITACIONES -->
+                            <div class="py-4">
+                                <div class="grid gap-2 md:grid-cols-[1fr]">
+                                    <div class="w-full">
+                                        <div class="flex gap-2 justify-start items-center uppercase bg-rn-primary-light/60 rounded-full pe-4 py-0 mb-2">
+                                            <span class="bg-rn-primary rounded-full p-1.5 flex justify-center items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="size-4">
+                                                    <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
+                                                </svg>
+                                            </span>
+                                            <p class="text-rn-primary text-sm"><strong>INHABILITACIONES</strong></p>
+                                        </div>
+                                        <p class="text-xs">No se registran datos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Baja Contable archivo BCRA  -->
+                            <div class="py-4">
+                                <div class="grid gap-2 md:grid-cols-[1fr]">
+                                    <div class="w-full">
+                                        <div class="flex gap-2 justify-start items-center uppercase bg-rn-primary-light/60 rounded-full pe-4 py-0 mb-2">
+                                            <span class="bg-rn-primary rounded-full p-1.5 flex justify-center items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="size-4">
+                                                    <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
+                                                </svg>
+                                            </span>
+                                            <p class="text-rn-primary text-sm"><strong>Baja Contable archivo BCRA</strong></p>
+                                        </div>
+                                        <p class="text-xs">No se registran datos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- DESCARGOS  -->
+                            <div class="py-4">
+                                <div class="grid gap-2 md:grid-cols-[1fr]">
+                                    <div class="w-full">
+                                        <div class="flex gap-2 justify-start items-center uppercase bg-rn-primary-light/60 rounded-full pe-4 py-0 mb-2">
+                                            <span class="bg-rn-primary rounded-full p-1.5 flex justify-center items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="size-4">
+                                                    <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
+                                                </svg>
+                                            </span>
+                                            <p class="text-rn-primary text-sm"><strong>DESCARGOS</strong></p>
+                                        </div>
+                                        <p class="text-xs">No se registran datos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- RELACIONES -->
+                            <div class="py-4">
+                                <div class="grid gap-2 md:grid-cols-[1fr]">
+                                    <div class="w-full">
+                                        <div class="flex gap-2 justify-start items-center uppercase bg-rn-primary-light/60 rounded-full pe-4 py-0 mb-2">
+                                            <span class="bg-rn-primary rounded-full p-1.5 flex justify-center items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="size-4">
+                                                    <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
+                                                </svg>
+                                            </span>
+                                            <p class="text-rn-primary text-sm"><strong>RELACIONES</strong></p>
+                                        </div>
+                                        <p class="text-xs">No se registran datos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Beneficios Jubilatorios y otros Beneficios  -->
+                            <div class="py-4">
+                                <div class="grid gap-2 md:grid-cols-[1fr]">
+                                    <div class="w-full">
+                                        <div class="flex gap-2 justify-start items-center uppercase bg-rn-primary-light/60 rounded-full pe-4 py-0 mb-2">
+                                            <span class="bg-rn-primary rounded-full p-1.5 flex justify-center items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="size-4">
+                                                    <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
+                                                </svg>
+                                            </span>
+                                            <p class="text-rn-primary text-sm"><strong>Beneficios Jubilatorios y otros Beneficios</strong></p>
+                                        </div>
+                                        <p class="text-xs">No se registran datos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ASIGNACIONES -->
+                            <div class="py-4">
+                                <div class="grid gap-2 md:grid-cols-[1fr]">
+                                    <div class="w-full">
+                                        <div class="flex gap-2 justify-start items-center uppercase bg-rn-primary-light/60 rounded-full pe-4 py-0 mb-2">
+                                            <span class="bg-rn-primary rounded-full p-1.5 flex justify-center items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="size-4">
+                                                    <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
+                                                </svg>
+                                            </span>
+                                            <p class="text-rn-primary text-sm"><strong>ASIGNACIONES</strong></p>
+                                        </div>
+                                        <p class="text-xs">No se registran datos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- INQUIRE -->
+                            <div class="py-4">
+                                <div class="grid gap-2 md:grid-cols-[1fr]">
+                                    <div class="w-full">
+                                        <div class="flex gap-2 justify-start items-center uppercase bg-rn-primary-light/60 rounded-full pe-4 py-0 mb-2">
+                                            <span class="bg-rn-primary rounded-full p-1.5 flex justify-center items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="size-4">
+                                                    <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
+                                                </svg>
+                                            </span>
+                                            <p class="text-rn-primary text-sm"><strong>INQUIRE</strong></p>
+                                        </div>
+                                        <p class="text-xs">No se registran datos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- legales -->
+                        <div class="p-4">
+                            <div class="bg-neutral-100 p-4 rounded-xl">
+                                <p class="text-xs leading-tight text-justify mb-2">El presente informe contiene datos personales de carácter patrimonial relativos a la solvencia económica y crediticia, y tiene como único objetivo constituir una herramienta más para la evaluación de la solvencia patrimonial de su titular por parte de potenciales proveedores de crédito. Queda expresamente aclarado que las decisiones que el receptor de este informe adopte en orden al otorgamiento o rechazo del crédito, son consecuencia de su valoración o apreciación de los datos.La información en él contenida se limita a datos nominativos y/o provenientes de fuentes de acceso público irrestricto, acerca de los cuales la ley no exige el consentimiento del titular para su tratamiento (cf. art. 5 ley 25.326).</p>
+                                <p class="text-xs leading-tight mb-2">Tel: 4876-7600 Líneas Rotativas.</p>
+                                <p class="text-xs leading-tight">E-mail: info@riesgonet.com</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+
+<script src="../../../js/main.js"></script>
+
+</body>
+</html>
