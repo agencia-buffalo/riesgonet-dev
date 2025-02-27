@@ -779,11 +779,6 @@ video {
   margin-bottom: 2rem;
 }
 
-.my-12 {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
-
 .-ml-1 {
   margin-left: -0.25rem;
 }
@@ -836,6 +831,10 @@ video {
   margin-top: 2.5rem;
 }
 
+.mt-12 {
+  margin-top: 3rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -846,18 +845,6 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mt-12 {
-  margin-top: 3rem;
-}
-
-.ml-auto {
-  margin-left: auto;
-}
-
-.mr-auto {
-  margin-right: auto;
 }
 
 .block {
@@ -1002,22 +989,6 @@ video {
   max-width: 950px;
 }
 
-.max-w-80 {
-  max-width: 20rem;
-}
-
-.max-w-2xl {
-  max-width: 42rem;
-}
-
-.max-w-xl {
-  max-width: 36rem;
-}
-
-.max-w-lg {
-  max-width: 32rem;
-}
-
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -1056,10 +1027,6 @@ video {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
 .flex-row-reverse {
   flex-direction: row-reverse;
 }
@@ -1070,14 +1037,6 @@ video {
 
 .flex-col-reverse {
   flex-direction: column-reverse;
-}
-
-.place-content-stretch {
-  place-content: stretch;
-}
-
-.content-stretch {
-  align-content: stretch;
 }
 
 .items-start {
@@ -1142,10 +1101,6 @@ video {
 
 .self-start {
   align-self: flex-start;
-}
-
-.self-stretch {
-  align-self: stretch;
 }
 
 .justify-self-end {
@@ -1276,6 +1231,10 @@ video {
   background-color: rgb(130 228 193 / var(--tw-bg-opacity, 1));
 }
 
+.bg-rn-secondary-light\/20 {
+  background-color: rgb(130 228 193 / 0.2);
+}
+
 .bg-rn-secondary-light\/30 {
   background-color: rgb(130 228 193 / 0.3);
 }
@@ -1287,10 +1246,6 @@ video {
 
 .bg-white\/50 {
   background-color: rgb(255 255 255 / 0.5);
-}
-
-.bg-rn-secondary-light\/20 {
-  background-color: rgb(130 228 193 / 0.2);
 }
 
 .bg-\[url\(\'\.\/img\/rn-bg-blur\.svg\'\)\] {
@@ -1594,6 +1549,11 @@ video {
   color: rgb(49 192 141 / var(--tw-text-opacity, 1));
 }
 
+.text-rn-secondary-dark {
+  --tw-text-opacity: 1;
+  color: rgb(11 144 104 / var(--tw-text-opacity, 1));
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
@@ -1601,11 +1561,6 @@ video {
 
 .text-white\/75 {
   color: rgb(255 255 255 / 0.75);
-}
-
-.text-rn-secondary-dark {
-  --tw-text-opacity: 1;
-  color: rgb(11 144 104 / var(--tw-text-opacity, 1));
 }
 
 .placeholder-black\/25::-moz-placeholder {
@@ -1626,6 +1581,26 @@ video {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.grayscale-0 {
+  --tw-grayscale: grayscale(0);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.grayscale {
+  --tw-grayscale: grayscale(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.invert {
+  --tw-invert: invert(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.sepia {
+  --tw-sepia: sepia(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 html {
@@ -1678,14 +1653,6 @@ form label span {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   font-weight: 700;
-}
-
-.\*\:inline-block > * {
-  display: inline-block;
-}
-
-.\*\:inline > * {
-  display: inline;
 }
 
 .\*\:h-10 > * {
@@ -1934,20 +1901,16 @@ form label span {
     max-width: 320px;
   }
 
+  .md\:max-w-\[40\%\] {
+    max-width: 40%;
+  }
+
   .md\:max-w-\[50\%\] {
     max-width: 50%;
   }
 
   .md\:max-w-lg {
     max-width: 32rem;
-  }
-
-  .md\:max-w-\[40\%\] {
-    max-width: 40%;
-  }
-
-  .md\:max-w-\[30\%\] {
-    max-width: 30%;
   }
 
   .md\:table-auto {
@@ -1996,10 +1959,6 @@ form label span {
 
   .md\:grid-cols-\[4fr_1fr_1fr_1fr\] {
     grid-template-columns: 4fr 1fr 1fr 1fr;
-  }
-
-  .md\:grid-cols-\[3fr_1fr\] {
-    grid-template-columns: 3fr 1fr;
   }
 
   .md\:grid-rows-3 {
